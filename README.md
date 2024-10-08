@@ -131,7 +131,7 @@ Add the following endpoints using the help of Copilot, then also create the unit
 - **/returncolorcode**:
 
   - receive by querystring a parameter called color
-  - read colors.json file under resources and return the rgba field
+  - read colors.json file and return the rgba field
   - get color var from querystring
   - iterate for each color in colors.json to find the color
   - return the hex field
