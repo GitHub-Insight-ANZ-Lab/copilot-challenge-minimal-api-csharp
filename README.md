@@ -146,6 +146,8 @@ Add the following endpoints using the help of Copilot, then also create the unit
 
 In exercise 3, we have created a few endpoints in the `Program.cs` file. Now let's refactor the code to make it more readable and maintainable by moving those endpoints into separate files. With the `Program.cs` file open, ask Copilot using the chat feature how to refactor those endpoints into separate files.
 
+Copilot probably suggests manually calling each endpoints `Map` extension method in the `Program.cs` file. Use Copilot to create a generic method that will automatically call the `Map` extension method to map each endpoint.
+
 > **_NOTE:_** You can use the `@workspaces` command to give Copilot the context of the structure of the whole repo.
 
 ### Exercise 6: Building more integrations
