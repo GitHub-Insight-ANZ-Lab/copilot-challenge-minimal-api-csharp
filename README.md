@@ -98,7 +98,7 @@ A total of 1 test files matched the specified pattern.
 Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 4 ms - MinimalAPI.Tests.dll (net8.0)
 ```
 
-### Exercise 3: Building new functionalities
+### Exercise 4: Building new functionalities
 
 For this exercise, the code will live inside `MinimalAPI/Program.cs`
 
@@ -142,9 +142,19 @@ Add the following endpoints using the help of Copilot, then also create the unit
 > Paste the above information and make it as detailed as possible in the Copilot chat text box.
 > Copilot will use by default the open file as context in order to generate the suggestion.
 
-### Exercise 4: Building more integrations
+## Exercise 5: Refactor your endpoints
+
+In exercise 3, we have created a few endpoints in the `Program.cs` file. Now let's refactor the code to make it more readable and maintainable by moving those endpoints into separate files. With the `Program.cs` file open, ask Copilot using the chat feature how to refactor those endpoints into separate files.
+
+Copilot probably suggests manually calling each endpoints `Map` extension method in the `Program.cs` file. Use Copilot to create a generic method that will automatically call the `Map` extension method to map each endpoint.
+
+> **_NOTE:_** You can use the `@workspaces` command to give Copilot the context of the structure of the whole repo.
+
+### Exercise 6: Building more integrations
 
 We have tried out write coding for a few simple tasks earlier. Now let's explore more complex integrations.
+
+> **_NOTE:_** You should follow the same pattern as the previous exercise and create each new endpoint in a separate file.
 
 - **/tellmeajoke**:
 
@@ -189,13 +199,19 @@ We have tried out write coding for a few simple tasks earlier. Now let's explore
   - Return a random country from the array
   - Return the country and its iso code
 
-### Exercise 5: Document the code
+### Exercise 7: Refactor the code to follow REST principles
+
+At this point in the previous exercises, we created a number of endpoints that are not following REST principles. Let's refactor the code to follow REST principles. You should also update the Swagger documentation, so that each endpoint has a summary and is grouped using tags.
+
+Ask Copilot how you could achieve this. You can use the `@workspaces` command to give Copilot the context of the structure of the whole repo. 
+
+### Exercise 8: Document the code
 
 Documenting code is always a boring and painful task. However, we can use Copilot to document it for us. In the chat, ask Copilot to add xml comments to all of your files.
 
 You can use `@workspaces` to write documentation for the whole repo.
 
-### Exercise 6: Verify Tests
+### Exercise 9: Verify Tests
 
 Have you been building your Unit Tests along the way? If not this is the perfect time to take a breather and get Copilot to write some unit tests for you!
 
@@ -203,7 +219,7 @@ We will create automated tests to check that the functionality of the previous e
 
 You can leverage Copilot to run the tests. There is a `/tests` command that you can directly run from Copilot Chat or by selecting the piece of code you want to create tests for and using the Copilot inline feature.
 
-### Exercise 7: Create a Dockerfile
+### Exercise 10: Create a Dockerfile
 
 Use the Dockerfile provided to create a docker image of the application. There are some comments in the Dockerfile that will help you to complete the exercise.
 
@@ -219,10 +235,11 @@ With the previous exercises you have gone through some common activities that de
 
 - Create new features in the code
 - Work with external APIs
+- Refactor an existing codebase
 - Create documentation
 - Create tests
 
-However, there are many other things that Copilot can helkp you with. Feel free to explore other slash command in the Copilot chat like:
+However, there are many other things that Copilot can help you with. Feel free to explore other slash command in the Copilot chat like:
 
 - `/fix`: to fix the problems in your code
 - `/explain`: for Copilot to explain you what the code does
