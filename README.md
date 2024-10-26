@@ -43,7 +43,7 @@ For this exercise we will be adding a new endpoint to handle a simple GET reques
 
 You can now run the application and then test it with curl.
 
-1. Run the spring app: `dotnet run --project ./MinimalAPI/MinimalAPI.csproj`
+1. Run the app: `dotnet run --project ./MinimalAPI/MinimalAPI.csproj`
 2. Test with curl: `curl -v "http://localhost:5163/"`
 3. If you are using GitHub `Codespaces`, replace localhost:5163 with actual `Codespaces` url.
 
@@ -67,7 +67,7 @@ For this exercise we will be adding a new endpoint to handle a simple GET reques
 
 You can now run the application and then test it with curl.
 
-1. Run the spring app: `dotnet run --project ./MinimalAPI/MinimalAPI.csproj`
+1. Run the app: `dotnet run --project ./MinimalAPI/MinimalAPI.csproj`
 2. Test with curl: `curl -v "http://localhost:5163/hello?key=world"`
 3. If you are using GitHub `Codespaces`, replace localhost:5163 with actual `Codespaces` url.
 
@@ -203,7 +203,7 @@ We have tried out write coding for a few simple tasks earlier. Now let's explore
 
 At this point in the previous exercises, we created a number of endpoints that are not following REST principles. Let's refactor the code to follow REST principles. You should also update the Swagger documentation, so that each endpoint has a summary and is grouped using tags.
 
-Ask Copilot how you could achieve this. You can use the `@workspaces` command to give Copilot the context of the structure of the whole repo. 
+Ask Copilot how you could achieve this. You can use the `@workspaces` command to give Copilot the context of the structure of the whole repo.
 
 ### Exercise 8: Document the code
 
